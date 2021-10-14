@@ -1,0 +1,47 @@
+*, *::before, *::after  {
+    box-sizing: border-box;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    min-width: 1500px;
+    padding: 0 30px;
+}
+
+.header {
+    position: absolute;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+}
+.logo__img {
+}
+.btn {
+}
+.btn_type_burger {
+}
+.btn__lines {
+}
+.main {
+}
+.hero {
+    background-image: url(../img/first_section_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero__content {
+}
+.small-text {
+}
+.desc {
+}
+.link {
+}
