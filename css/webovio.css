@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+@font-face { src: url("../fonts/Poppins-Regular.woff") format("woff"); font-family: "Poppins"; font-weight: 400; font-style: normal; }
+@font-face { src: url("../fonts/Poppins-Bold.woff") format("woff"); font-family: "Poppins"; font-weight: 700; font-style: bold; }
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
 
 img {
     max-width: 100%;
@@ -14,6 +21,7 @@ img {
 
 .header {
     position: absolute;
+    padding: 20px 0;
 }
 .header__container {
     display: flex;
@@ -29,6 +37,16 @@ img {
 }
 .btn__lines {
 }
+
+.title {
+    font-weight: 700;
+    font-size: 60px;
+    margin: 0;
+}
+.hero__title {
+    margin-bottom: 45px;
+}
+
 .main {
 }
 .hero {
@@ -36,12 +54,31 @@ img {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 187px 0 210px;
+    color: white;
 }
 .hero__content {
+    max-width: 616px;
 }
 .small-text {
+    font-size: 14px;
 }
-.desc {
+.hero__small-text {
+    margin-bottom: 40px;
+    display: inline-block;
+}
+.hero__desc {
+    margin: 0;
+    margin-bottom: 55px;
 }
 .link {
+    text-decoration: none;
+    font-weight: 700;
+    color: inherit;
+}
+
+.link__text {
+    display: inline-block;
+    border-bottom: 1px solid white;
+    padding-left: 10px;
 }
