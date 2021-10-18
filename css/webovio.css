@@ -257,17 +257,21 @@ img {
 }
 .footer__top {
   display: flex;
-  margin-bottom: 65px;
+  padding-bottom: 65px;
+  border-bottom: 1px solid #5D6544;
 }
 .list {
 
+}
+.footer__item:not(:last-child) {
+  margin-right: 65px;
 }
 
 .list__title {
   font-size: 16px;
   color: #fff;
   font-weight: 500;
-  margin: 0 0 45px;
+  margin: 0 0 25px;
   text-transform: uppercase;
 }
 .list__items {
@@ -281,6 +285,7 @@ img {
   line-height: 40px;
   font-weight: 400;
 }
+
 .list__tel {
 }
 .list__address {
@@ -313,12 +318,13 @@ img {
 
 .footer__body {
   display: flex;
-  padding: 70px 0;
-  border-top: 1px solid #5D6544;
+  justify-content: space-between;
+  padding: 70px 0;  
   border-bottom: 1px solid #5D6544;
-  margin-bottom: 27px;
 }
 .footer__email-social {
+  padding-left: 100px;
+  border-left: 1px solid #5D6544;
 }
 .email {
 }
@@ -328,8 +334,37 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 27px;
+  color: #B6C197;
 }
 .footer__logo {
 }
 .copyright {
+}
+
+.getintouch__title {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+}
+
+.getintouch__text {
+  color: #B6C197;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.email-link {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
 }
