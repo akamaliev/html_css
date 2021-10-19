@@ -268,7 +268,7 @@ img {
   font-size: 16px;
   color: #fff;
   font-weight: 500;
-  margin: 0 0 25px;
+  margin: 0 0 45px;
   text-transform: uppercase;
 }
 .list__items {
@@ -279,8 +279,10 @@ img {
   list-style: none;
   color: #B6C197;
   font-size: 16px;
-  line-height: 40px;
   font-weight: 400;
+}
+.list__item:not(:last-child) {
+  padding-bottom: 20px;
 }
 
 .list__tel {
@@ -317,11 +319,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 70px 0;  
+  padding: 70px 0 30px;  
   border-bottom: 1px solid #5D6544;
 }
 .footer__body .list {
   padding-right: 30px;
+  margin-bottom: 40px;
+  /* min-width: 172px; */
 }
 .delimetr {
   width: 1px;
@@ -339,6 +343,7 @@ img {
   color: #B6C197;
 }
 .footer__logo {
+  margin-right: 30px;
 }
 .copyright {
 }
@@ -354,7 +359,6 @@ img {
 .getintouch__text {
   color: #B6C197;
   font-size: 16px;
-  line-height: 26px;
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -383,3 +387,44 @@ img {
     flex-wrap: wrap;
   }
 } */
+
+@media (max-width:991.8px) {
+  .footer__email-social {
+    width: 100%;
+    border-top: 1px solid #5D6544;
+    padding-top: 30px;
+  }
+  .delimetr {
+    display: none;
+  }
+  .footer__body .list {
+    min-width: 177px;
+  }
+}
+
+@media (max-width:767.8px) {
+
+}
+
+@media (max-width:575.8px) {
+  .container {
+    padding: 0 20px;
+  }
+  .email-link {
+    font-size: 20px;
+  }
+  .footer__top {
+    justify-content: space-between;
+  }
+  .footer__phone {
+    margin-right: 30px;
+  }  
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
